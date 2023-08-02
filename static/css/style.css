@@ -1,0 +1,90 @@
+html { 
+  height:100%; 
+}
+
+body {
+  height:100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: "微軟正黑體", "Microsoft JhengHei", arial, sans-serif;
+}
+
+.border-width-lg{
+border-width: 8px !important;
+}
+
+.card-bg-eid{
+background-color: white;
+}
+
+.card-shadow{
+box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.16);
+}
+
+.logo-sm {
+width: 65%;
+}
+
+.logo-md {
+width: 80%;
+}
+
+.logo-isu {
+width: 46.5px;
+}
+
+.bg-cover {
+background-size: cover;
+background-position: center center;
+}
+
+.bg-contain {
+background-size: contain;
+background-position: center center;
+
+}
+
+.dropdown-menu-right {
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  left: auto;
+}
+
+.checkbox-1x {
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+}
+
+.fz-xs{
+  font-size: 10px;
+}
+
+.fz-s{
+  font-size: 12px;
+}
+
+.icon-sm {
+  width: 5%;
+}
+
+.qr-code-width{
+  width: 110px;
+}
+
+
+.table-width-s{
+  min-width: 80px;
+}
+
+.table-width-m{
+  min-width: 160px;
+}
+
+.table-width-l{
+  min-width: 240px;
+}
+
+.table-width-xl{
+  min-width: 320px;
+}
