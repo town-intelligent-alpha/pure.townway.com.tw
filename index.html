@@ -1,63 +1,203 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" 
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link href="/static/css/style.css" rel="stylesheet" type="text/css">
-    <script>
-      function dis_ann_cookie() {
-        console.log("disable ann_cookie");
-        document.getElementById("ann_cookie").style.visibility = "hidden";
-      }
-    </script>		
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="/static/css/style.css" rel="stylesheet" type="text/css" />
   </head>
-
   <body>
-    <div class="container-fluid border border-secondary border-width-lg">
-      <div class="row">
-        <div class="col">
-          <nav class="navbar navbar-light bg-white px-3">
-            <a class="navbar-brand" href="index.html">
-              <img class="mr-1 logo-isu" src="/static/imgs/eID-logo.png">
-              <img class="logo-isu" src="/static/imgs/ISU logo-s.png">
-            </a>
-          </nav>
-          <div class="mt-3 px-3">
-            <p>
-              『  純粹 (pure) 從教育出發，<br>期許帶領每個想要學習的人一起成長。』
-            </p>
-            <p>
-              璞育塾的理念是藉由鄉村型學校的課後輔導、體驗課程與在地經營，開創「教育」多元面向的可能性，陪伴學生一同發掘「學習」的樂趣，讓教育成為地方創生的務實根本，也讓地方產業成為教育有力的支持。
-            </p>
-          </div>
-          <div class="mt-2 text-center px-3">
-            <img src="/static/imgs/Landing page banner.jpg" class="img-fluid">
-          </div>
-          <div class="mt-3 text-center px-3">
-            <img src="/static/imgs/Volunteer service flow.png" class="img-fluid">
-          </div>
-          <div class="d-flex my-4 mb-3 justify-content-center">
-            <a class="btn-lg btn-primary rounded-0" href="/accounts/signin.html" role="button">
-              加入志工行列
-            </a>
+    <header>
+      <nav class="navbar fixed-top navbar-light top">
+        <div class="container">
+          <a class="navbar-brand" href="/">
+            <img class="logo-isu" src="/static/imgs/eID.svg" />
+
+            <img class="logo-isu" src="/static/imgs/I-SHOU.svg" />
+          </a>
+          <div class="d-flex">
+            <a class="btn" href="/accounts/signin.html">登入</a>
           </div>
         </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="section py-5">
+        <div
+          id="subject"
+          class="d-flex justify-content-center flex-column align-items-center"
+          style="background-image: url(/static/imgs/blob/blob-2.png)"
+        >
+          <h1 class="text-center pt-5">就愛賴在璞育塾</h1>
+          <p class="d-block text-center">
+            『 純粹 (pure) 從教育出發， 期許帶領每個想要學習的人一起成長。』
+            <!-- <br />璞育塾的理念是藉由鄉村型學校的課後輔導、體驗課程與在地經營，開創「教育」多元面向的可能性，陪伴學生一同發掘「學習」的樂趣，讓教育成為地方創生的務實根本，也讓地方產業成為教育有力的支持。 -->
+          </p>
+        </div>
+        <div class="wrap">
+          <div class="slider">
+            <div class="item">
+              <img src="/static/imgs/carousel/carousel-img1.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img src="/static/imgs/carousel/carousel-img2.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img src="/static/imgs/carousel/carousel-img3.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img src="/static/imgs/carousel/carousel-img4.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img src="/static/imgs/carousel/carousel-img5.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img src="/static/imgs/carousel/carousel-img6.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img src="/static/imgs/carousel/carousel-img7.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img src="/static/imgs/carousel/carousel-img8.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img src="/static/imgs/carousel/carousel-img9.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <a href="#section-2">
+          <i class="fa-solid fa-chevron-down bounce">如何成為璞育塾志工？</i>
+        </a>
       </div>
-      <div class="bg-light p-3">
-        <p id="ann_cookie" class="mb-0">
-          為提供您最佳的瀏覽體驗，本網站會在您的電腦中讀取並儲存使用者的Cookie。繼續瀏覽，即表示您同意隱私權政策。
-          <a href="javascript:dis_ann_cookie();" class="badge badge-pill badge-primary">確定</a>
-        </p>
+
+      <div id="section-2" class="section py-5">
+        <div
+          id="subject"
+          class="d-flex justify-content-center flex-column align-items-center"
+          style="background-image: url(/static/imgs/blob/blob-1.png)"
+        >
+          <h1 class="text-center pt-5">志工服務管理流程</h1>
+          <p class="d-block text-center">從任務提出到時數累積</p>
+        </div>
+        <div
+          class="profile-card"
+          data-tilt
+          data-tilt-max="3"
+          data-tilt-speed="1000"
+          data-tilt-glare
+          data-tilt-max-glare="0.1"
+          data-tilt-full-page-listening
+        >
+          <div id="imgs-process">
+            <img
+              src="/static/imgs/Volunteer service flow.png"
+              class="img-fluid"
+            />
+            <img
+              src="/static/imgs/Volunteer service flow2.png"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+
+        <a href="/accounts/signin.html" role="button">
+          <button class="custom-btn btn-9">加入志工行列</button>
+        </a>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <h2>聯絡我們</h2>
+        <hr style="width: 90vw" />
+        <ul class="socials">
+          <li>
+            <a href="https://www.facebook.com/TWpureSPACE/"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://myship.7-11.com.tw/general/detail/GM2302245360880"
+              ><i class="fa-solid fa-shop"></i
+            ></a>
+          </li>
+          <li>
+            <a href="mailto:twpureceda@gmail.com"
+              ><i class="fa-brands fa-google-plus"></i
+            ></a>
+          </li>
+          <li>
+            <a href="tel:06-687-2731"><i class="fa-solid fa-phone"></i></a>
+          </li>
+          <li>
+            <a
+              href="https://www.google.com/maps/dir/?api=1&destination=23.366606805578%2C120.36707779625&fbclid=IwAR3fKRjCg0YZWLNR4aTFqyb3gOO6Gt2-qNxCymeKOYbBIBUa11fzwa2RSls"
+              ><i class="fa-solid fa-location-dot"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <div class="goTop hide">
+      <a href="#" class="goTopBtn jq-goTop">
+        <i class="fas fa-arrow-alt-circle-up fa-3x"></i>
+      </a>
+    </div>
+
+    <div id="cookie" class="fixed-bottom text-center">
+      <div class="container-fluid">
+        <div class="p-3">
+          <p id="ann_cookie" class="mb-0">
+            為提供您最佳的瀏覽體驗，本網站會在您的電腦中讀取並儲存使用者的Cookie。繼續瀏覽，即表示您同意隱私權政策。
+          </p>
+          <br />
+          <a id="close-btn" class="btn" href="javascript:void(0);" role="button"
+            >確定</a
+          >
+        </div>
       </div>
     </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js"
+      integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+      integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+
+    <script src="/static/js/index.js"></script>
   </body>
 </html>
