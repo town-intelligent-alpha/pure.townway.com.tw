@@ -33,8 +33,10 @@
     "axe/parsing": [
       "default",
       {
-        "duplicate-id": "off"
+        "duplicate-id": "off",
+        "duplicate-id-aria": "off"
       }
-    ]
+    ],
+    "highest-available-document-mode": "off"
   }
 }
