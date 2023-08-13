@@ -6,6 +6,30 @@ html {
 
 body {
   font-family: "Noto Sans TC", sans-serif !important;
+  background: #dda45f;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+}
+
+.btn {
+  color: #fff;
+  border-color: #217091;
+  background-color: #217091;
+}
+
+.btn:hover {
+  background-color: #5fb8de;
+  border-color: #5fb8de;
+  color: #fff;
 }
 
 header nav.top {
@@ -22,35 +46,11 @@ main {
   background-image: url(/static/imgs/background.jpg);
   background-attachment: fixed;
   background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
-h1 {
-  font-weight: 600;
-}
-
-a:hover,
-a:visited,
-a:link,
-a:active {
-  text-decoration: none;
-}
-
-.btn {
-  color: #217091;
-  border-color: #217091;
-}
-
-.btn:hover {
-  background-color: #217091;
-  border-color: #217091;
-  color: #fff;
-}
-
-.btn:focus {
-  background-color: #5fb8de;
-  border-color: #5fb8de;
-  color: #fff;
-}
+/* --- */
 
 .card-bg-eid {
   background-color: white;
@@ -146,7 +146,7 @@ a:active {
   margin-top: 0.5em;
 }
 
-/* --- */
+/* ---輪播圖 */
 
 .wrap {
   width: 100%;
@@ -224,7 +224,6 @@ a:active {
 }
 
 .item.slick-slide.slick-center {
-  /* margin: 0 -10%; */
   transform: scale(1);
   z-index: 30;
 }
@@ -233,7 +232,7 @@ a:active {
   opacity: 0;
 }
 
-/* bouncing arrow */
+/* ---彈跳按鈕--- */
 
 .fa-chevron-down {
   color: #217091 !important;
@@ -310,7 +309,7 @@ a:active {
   animation: bounce 2s infinite;
 }
 
-/* --- */
+/* ---流程圖--- */
 
 .profile-card {
   padding: 20px 40px;
@@ -385,6 +384,8 @@ a:active {
     display: block;
   }
 }
+
+/* ---加入志工行列(按鈕)--- */
 
 .custom-btn {
   width: 500px;
@@ -484,6 +485,8 @@ footer {
   color: aqua;
 }
 
+/* ---cookie--- */
+
 #cookie {
   background: #1e1e1e;
   color: #e2e2e2;
@@ -507,7 +510,7 @@ footer {
   }
 }
 
-/* --- */
+/* ---goTop--- */
 
 .goTop {
   position: fixed;
@@ -538,4 +541,22 @@ footer {
   }
 }
 
-/* --- */
+/* ---login--- */
+.login-card {
+  max-width: 500px;
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.1);
+}
+.or-divider {
+  height: 40px;
+  width: 40px;
+}
+.btn-facebook {
+  background: #4267b2;
+  border-color: #4267b2;
+  color: #fff;
+}
+.btn-google {
+  background: #db3236;
+  border-color: #db3236;
+  color: #fff;
+}
